@@ -8,7 +8,6 @@
 
 
 ## Installation
-* $ npm i
-* $ npm run build
-* $ npm run start
+* $ npm install
+* $ npm start
 * go to http://127.0.0.1:3000
