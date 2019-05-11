@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>cybersolution</title>
+  <meta name="description" content="cybersolution layout page" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="cybersolution-header">
+    <div class="cybersolution-header__container">
+      <div class="cybersolution-header__logo">
+        <h1>
+          <a href="http://www.cybersolution.com">
+            <img src="/assets/imgs/logo.png" alt="cybersolution.com" />
+          </a>
+        </h1>
+      </div>
+      <nav class="cybersolution-nav-mobile-container">
+        <button class="cybersolution-open-menu">
+          <i class="icon-menu"></i>
+          <span class="page-active">Home</span>
+        </button>
+        <div class="cybersolution-nav-mobile">
+          <button class="cybersolution-close-menu">
+            <i class="icon-close"></i>
+          </button>
+          <ul>
+            <li class="selected" data-target="home"><span>Home</span></li>
+            <li data-target="portfolio"><span>Portfolio</span></li>
+            <li data-target="features"><span>Features</span></li>
+          </ul>
+          <div class="cybersolution-nav-mobile__overlay"></div>
+        </div>
+      </nav>
+      <nav class="cybersolution-nav-container">
+        <div class="cybersolution-nav">
+          <ul>
+            <li class="selected" data-target="home">Home</li>
+            <li data-target="portfolio">Portfolio</li>
+            <li data-target="features">Features</li>
+            <li data-target="blog">Blog</li>
+          </ul>
+        </div>
+        <button class="cybersolution-search">
+          <i class="icon-search"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <section class="cybersolution-page" id="home">
+    <div class="cybersolution-page__overlay">
+      <img src="assets/imgs/loader.gif" alt="loader" class="loader_img" />
+    </div>
+    <div class="cybersolution-page__logo-mobile">
+      <h1>
+        <a href="http://www.cybersolution.com">
+          <img src="/assets/imgs/logo_mobile.png" alt="cybersolution.com" />
+        </a>
+      </h1>
+    </div>
+    <div class="cybersolution-slider">
+      <div id="slides">
+      </div>
+      <div class="cybersolution-slider-controls">
+        <button class="cybersolution-arrow-left">
+          <i class="icon-left"></i>
+        </button>
+        <button class="cybersolution-arrow-right">
+          <i class="icon-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="cybersolution-projects" id="portfolio">
+      <div class="cybersolution-projects__title">
+        <h2>Our projects</h2>
+        <h3>Check out other themes based on <span>Jedi</span></h3>
+      </div>
+      <div class="cybersolution-projects__filters">
+        <ul>
+          <li class="selected">All</li>
+          <li>Business</li>
+          <li>Creative</li>
+          <li>Portfolio</li>
+          <li>Blog</li>
+          <li>Infrastructure</li>
+          <li>Industrial</li>
+          <li>Other</li>
+        </ul>
+      </div>
+      <div class="cybersolution-projects__projects-list">
+        <div class="project"><img src="assets/imgs/project-image.jpg" alt="project image" /></div>
+        <div class="project"><img src="assets/imgs/project-image.jpg" alt="project image" /></div>
+        <div class="project"><img src="assets/imgs/project-image.jpg" alt="project image" /></div>
+      </div>
+    </div>
+    <div class="cybersolution-more" id="features">
+      <h2>More and more features</h2>
+      <div class="cybersolution-more__features-list"></div>
+    </div>
+  </section>
+  <footer class="cybersolution-footer" id="blog">
+    <div class="cybersolution-footer__first-column">
+      <div class="cybersolution-footer__logo">
+        <img src="/assets/imgs/logo_footer.png" class="logo_footer" alt="logo footer" />
+        <img src="/assets/imgs/logo_footer_mobile.png" class="logo_footer_mobile" alt="logo footer" />
+      </div>
+      <div class="cybersolution-footer__address">
+        <h4 class="label">
+          Address:
+        </h4>
+        <p>28 Jackson Bld Ste</p>
+        <p>1020 Chicago</p>
+        <p>IL 60604-2340</p>
+      </div>
+      <div class="cybersolution-footer__phone-email">
+        <div class="phone">
+            <h4 class="label">
+                Phone:
+              </h4>
+              <p>800-2345-6789</p>
+        </div>
+        <div class="email">
+            <h4 class="label">
+                Email:
+              </h4>
+              <p>info@demolink.org</p>
+        </div>
+      </div>
+      <div class="cybersolution-footer__social-list">
+        <a href="#" title="facebook">
+          <img src="/assets/imgs/facebook.png" alt="facebook" />
+        </a>
+        <a href="#" title="twitter">
+          <img src="/assets/imgs/twitter.png" alt="twitter" />
+        </a>
+        <a href="#" title="google">
+          <img src="/assets/imgs/google.png" alt="google" />
+        </a>
+        <a href="#" title="linkedin">
+          <img src="/assets/imgs/linkedin.png" alt="linkedin" />
+        </a>
+      </div>
+    </div>
+    <div class="cybersolution-footer__second-column">
+      <h4>
+        Latest from the blog
+      </h4>
+      <div class="single-post">
+        <div class="single-post__image">
+          <img src="/assets/imgs/post-image.png" alt="post image" />
+        </div>
+        <div class="single-post__info">
+          <span class="date"><span class="icon-right"></span>04/30/2014</span>
+          <p>Believe in the Business</p>
+        </div>
+      </div>
+      <div class="single-post">
+        <div class="single-post__image">
+          <img src="/assets/imgs/post-image.png" alt="post image" />
+        </div>
+        <div class="single-post__info">
+          <span class="date"><span class="icon-right"></span>04/30/2014</span>
+          <p>Believe in the Business</p>
+        </div>
+      </div>
+      <div class="single-post">
+        <div class="single-post__image">
+          <img src="/assets/imgs/post-image.png" alt="post image" />
+        </div>
+        <div class="single-post__info">
+          <span class="date"><span class="icon-right"></span>04/30/2014</span>
+          <p>Believe in the Business</p>
+        </div>
+      </div>
+    </div>
+    <div class="cybersolution-footer__third-column">
+      <h4>
+        Contact us
+      </h4>
+      <form id="contact" method="post" name="contact-form">
+        <div class="field">
+          <input type="text" tabindex="1" id="contact_name" name="name" placeholder="Your Name:">
+        </div>
+        <div class="field">
+          <input type="email" id="contact_email" name="email" placeholder="Your E-mail*:">
+          <span class="error">A valid email address is required</span>
+        </div>
+        <div class="field">
+          <textarea placeholder="Message*:" id="contact_message" name="message"></textarea>
+          <span class="error">A message is required</span>
+        </div>			
+        <button  tabindex="4" type="submit" name="send" id="send">Submit</button>
+        <div id="form-loader"></div>
+      </form>
+      <div id="messages"></div>
+    </div>
+    <div class="cybersolution-footer__copyright">
+      <p>
+        Jedi &#9400; 2019 <a href="#">Privacy Polity</a>
+      </p>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  </footer>
+</body>
+
+</html>

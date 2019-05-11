@@ -1,0 +1,71 @@
+.cybersolution-slider {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+
+  #slider {
+    width: 100%;
+    float: left;
+  }
+
+  #slides {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    left: -100%;
+    white-space: nowrap;
+
+    .slide {
+      width: 100%;
+      display: inline-block;
+      position: relative;
+
+      .caption {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        span {
+          text-transform: uppercase;
+          color: $white;
+          font-weight: bold;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+  }
+
+  &-controls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .cybersolution-arrow-left,
+    .cybersolution-arrow-right {
+      background: none;
+      border: none;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .cybersolution-arrow-right {
+      left: auto;
+      right: 0;
+    }
+  }
+}

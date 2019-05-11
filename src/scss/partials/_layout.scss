@@ -1,0 +1,77 @@
+.cybersolution-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 20px;
+  background: $white;
+  border-bottom: 1px solid $grey;
+  font-size: 12px;
+  z-index: 1;
+  transition: all 0.25s ease-in;
+
+  &__logo {
+    display: none;
+
+    a {
+      float: left;
+      line-height: 0px;
+    }
+
+    @include breakpoint(mobile-landscape) {
+      display: inline-block;
+
+      img {
+        width: 145px;
+      }
+    }
+
+    @include breakpoint(tablet-portrait) {
+      img {
+        width: 186px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @import "./menu";
+  }
+}
+
+.cybersolution-page {
+  padding-top: 60px;
+  position: relative;
+  @include breakpoint(mobile-landscape) {
+    padding-top: 81px;
+  }
+  @include breakpoint(tablet-portrait) {
+    padding-top: 92px;
+  }
+
+  &__logo-mobile {
+    text-align: center;
+
+    img {
+      width: 120px;
+      padding: 15px 0 30px 0;
+    }
+
+    @include breakpoint(mobile-landscape) {
+      display: none;
+    }
+  }
+}
+
+.cybersolution-footer {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #303030;
+  color: $white;
+  font-size: 12px;
+  z-index: 1;
+}

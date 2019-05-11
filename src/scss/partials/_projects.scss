@@ -1,0 +1,52 @@
+.cybersolution-projects {
+  text-align: center;
+  &__title {
+    padding: 30px 10px;
+    h2 {
+      font-size: 30px;
+      padding-bottom: 12px;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 26px;
+      line-height: 32px;
+      font-weight: normal;
+      span {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $black;
+      }
+    }
+  }
+  &__filters {
+    text-transform: uppercase;
+    ul {
+      width: auto;
+      display: inline-block;
+      padding-bottom: 16px;
+    }
+    li {
+      padding: 12px;
+      @include breakpoint(mobile-landscape) {
+        display: inline-block;
+      }
+      &.selected {
+        color: $black;
+        border-bottom: 1px solid $black;
+      }
+    }
+  }
+  &__projects-list {
+    @include breakpoint(tablet-portrait) {
+      display: flex;
+    }
+    .project {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      display: block;
+      padding: 10px;
+    }
+  }
+}

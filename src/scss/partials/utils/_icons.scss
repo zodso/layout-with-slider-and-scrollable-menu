@@ -1,0 +1,118 @@
+/* ICONS */
+
+.icon-menu {
+  color: $black;
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.icon-menu:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.icon-menu:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.icon-search {
+  color: #000;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 0;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  transform: rotate(-45deg);
+}
+
+.icon-search:before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 4px;
+  height: 8px;
+  width: 1px;
+  background-color: currentColor;
+}
+
+
+.icon-close {
+  color: $black;
+  position: absolute;
+  left: 0;
+}
+
+.icon-close:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: currentColor;
+  transform: rotate(-45deg);
+}
+
+.icon-close:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: currentColor;
+  transform: rotate(45deg);
+}
+
+.icon-left {
+  color: $white;
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.icon-left:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: rotate(-135deg);
+}
+
+.icon-right {
+  color: $white;
+  position: absolute;
+  right: 16px;
+  width: 16px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.icon-right:before {
+  content: '';
+  position: absolute;
+  right: 1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: rotate(45deg);
+}

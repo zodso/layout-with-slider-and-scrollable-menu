@@ -1,0 +1,151 @@
+.cybersolution {
+
+  &-nav {
+    display: none;
+    position: relative;
+
+    ul {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-left: 14px;
+        font-weight: bold;
+        color: #000;
+        padding-bottom: 7px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 30px;
+        }
+
+        &.selected {
+          border-bottom: 2px solid #43cbcb;
+        }
+
+        @include breakpoint(tablet-portrait) {
+          margin-left: 25px;
+        }
+      }
+    }
+
+    @include breakpoint(mobile-landscape) {
+      display: inline-block;
+    }
+
+
+    &-mobile {
+      left: -160px;
+      width: 160px;
+      position: absolute;
+      top: 0;
+      background-color: white;
+      height: 100vh;
+      transition: all 0.25s ease-in;
+
+      ul {
+        padding: 60px 0;
+        z-index: 0;
+        li {
+          text-transform: uppercase;
+          padding: 20px 0;
+
+          span {
+            display: inline-block;
+            padding-bottom: 6px;
+          }
+
+          &.selected {
+            span {
+              border-bottom: 2px solid #43cbcb;
+            }
+          }
+        }
+      }
+
+      &.open {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-right: 1px solid $grey;
+        .cybersolution-nav-mobile__overlay {
+          display: block;
+        }
+      }
+
+      @include breakpoint(mobile-landscape) {
+        display: none;
+      }
+      &__overlay {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        z-index: -1;
+      }
+    }
+  }
+
+  &-open-menu {
+    position: relative;
+    width: 24px;
+    height: 20px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .page-active {
+      position: relative;
+      right: -32px;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+
+    @include breakpoint(mobile-landscape) {
+      display: none;
+    }
+  }
+
+  &-close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 0;
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+    @include breakpoint(mobile-landscape) {
+      display: none;
+    }
+  }
+
+  &-search {
+    display: none;
+    background: none;
+    border: 0;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    top: -10px;
+    right: 2px;
+
+    @include breakpoint(mobile-landscape) {
+      display: inline-block;
+    }
+  }
+}
