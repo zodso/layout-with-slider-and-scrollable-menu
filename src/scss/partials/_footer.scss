@@ -25,6 +25,7 @@
       text-transform: uppercase;
       color: white;
       padding: 20px 0 12px 0;
+      text-align: left;
     }
     .single-post {
       display: flex;
@@ -68,6 +69,10 @@
       text-transform: uppercase;
       color: white;
       padding: 5px  0 12px 0;
+      text-align: left;
+    }
+    form {
+      text-align: left;
     }
     input,
     textarea {
